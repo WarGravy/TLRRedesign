@@ -138,7 +138,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(http://www.placehold.it/1920x1080) no-repeat bottom center scroll;
+    background: url(../images/hero.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -376,4 +376,12 @@ body {
 }
 .intro .brand-heading, .intro-body .btn, .nav a{
     color:#B80319!important;
+}
+#home-action{
+	background-color:#000!important;
+	color:#B80319!important;
+}
+.intro-text, .page-scroll{
+	color:#fff!important;
+text-shadow: 1.5px 1.5px #000;
 }
