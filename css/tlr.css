@@ -387,12 +387,12 @@ body {
 }
 
 .logo, .logo img{
-margin:0px;
-padding:0px;
-position:fixed;
-top:20px;
-    max-height:50px!important;
-    float:left;
+  margin: 0px;
+  padding: 4px;
+  position: fixed;
+  max-height: 50px!important;
+  float: left;
+  margin-top: -10px;
 }
 .light{
 	padding-left:55px;
