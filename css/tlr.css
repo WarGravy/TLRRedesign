@@ -397,7 +397,7 @@ body {
 .light{
 	padding-left:55px;
 }
-#people strong{
+.red, #people strong{
 	color:#B80319;
 }
 #people .btn:hover, #people .btn:focus{
@@ -414,4 +414,16 @@ body {
     background-color:rgba(0,0,0, 0.1);
     padding:25px;
     border-radius: 15px;
+}
+.grey{
+	color:#e8e8e8;
+}
+footer .grey, footer .red{
+ font-size:0.7em;
+}
+footer .banner-social-buttons, footer{
+margin:40px;
+}
+footer .banner-social-buttons{
+	margin-bottom:90px;
 }
