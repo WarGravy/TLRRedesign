@@ -410,3 +410,8 @@ body {
 	margin-bottom:0px;
 	list-style: none;
 }
+#people .container .text{
+    background-color:rgba(0,0,0, 0.1);
+    padding:25px;
+    border-radius: 15px;
+}
