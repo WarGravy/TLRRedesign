@@ -252,11 +252,11 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.people-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(http://placehold.it/1920x500) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -275,7 +275,7 @@ a:focus {
         padding-top: 250px;
     }
 
-    .download-section {
+    .people-section {
         padding: 100px 0;
     }
 
@@ -396,4 +396,17 @@ body {
 }
 .light{
 	padding-left:55px;
+}
+#people strong{
+	color:#B80319;
+}
+#people .btn:hover, #people .btn:focus{
+	background-color:#fff;
+}
+#people .btn{
+	margin-top:50px;
+}
+#people ul{
+	margin-bottom:0px;
+	list-style: none;
 }
