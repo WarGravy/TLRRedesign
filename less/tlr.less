@@ -1,3 +1,11 @@
+@import "grayscale.less";
+
+@white: #fff;
+@offwhite: #fcfcfc;
+@black: #000;
+@primary: #B80319;
+@grey: #e8e8e8;
+
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -8,8 +16,8 @@ body {
     width: 100%;
     height: 100%;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #fff;
-    background-color: #000;
+    color: @white;
+    background-color: @black;
 }
 
 html {
@@ -45,7 +53,7 @@ p {
 }
 
 a {
-    color: #B80319;
+    color: @primary;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -63,10 +71,10 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid fadeout(@white, 70%);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
+    background-color: @black;
 }
 
 .navbar-custom .navbar-brand {
@@ -80,7 +88,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: @white;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -89,12 +97,12 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: @white;
 }
 
 .navbar-custom .nav li.active {
     outline: nonte;
-    background-color: rgba(255,255,255,.3);
+    background-color: fadeout(@white, 70%);
 }
 
 .navbar-custom .nav li a {
@@ -107,7 +115,7 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
     outline: 0;
-    background-color: rgba(255,255,255,.3);
+    background-color: fadeout(@white, 70%);
 }
 
 @media(min-width:767px) {
@@ -123,11 +131,11 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: @black;
     }
 
     .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid fadeout(@white, 70%);
     }
 }
 
@@ -137,9 +145,9 @@ a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: @white;
     background: url(../images/hero.png) no-repeat bottom center scroll;
-    background-color: #000;
+    background-color: @black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -179,10 +187,10 @@ a:focus {
     height: 70px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
+    border: 2px solid @white;
     border-radius: 35px;
     font-size: 40px;
-    color: #fff;
+    color: @white;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -192,8 +200,8 @@ a:focus {
 .btn-circle:hover,
 .btn-circle:focus {
     outline: 0;
-    color: #fff;
-    background: rgba(255,255,255,.1);
+    color: @white;
+    background: fadeout(@white, 90%);
 }
 
 .btn-circle i.animated {
@@ -255,9 +263,9 @@ a:focus {
 .people-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: @white;
     background: url(http://placehold.it/1920x750) no-repeat center center scroll;
-    background-color: #000;
+    background-color: @black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -295,30 +303,30 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #B80319;
-    color: #B80319;
+    border: 1px solid @primary;
+    color: @primary;
     background-color: transparent;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #B80319;
+    border: 1px solid @primary;
     outline: 0;
-    color: #000;
-    background-color: #B80319;
+    color: @black;
+    background-color: @primary;
 }
 /*Social Buttons on Footer*/
 .banner-social-buttons .btn-default {
-    border: 1px solid #B80319;
-    color: #fff;
+    border: 1px solid @primary;
+    color: @white;
     background-color: transparent;
 }
 .banner-social-buttons .btn-default:hover,
 .banner-social-buttons.btn-default:focus {
-    border: 1px solid #fff;
+    border: 1px solid @white;
     outline: 0;
-    color: #000;
-    background-color: #fff;
+    color: @black;
+    background-color: @white;
 }
 
 ul.banner-social-buttons {
@@ -353,14 +361,14 @@ footer p {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: @offwhite;
+    background: fadeout(@white, 80%);
 }
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255,255,255,.2);
+    background: @offwhite;
+    background: fadeout(@white, 80%);
 }
 
 img::selection {
@@ -372,18 +380,18 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: rgba(255,255,255,.2);
+    webkit-tap-highlight-color: fadeout(@white, 80%);
 }
 .intro .brand-heading, .intro-body .btn, .nav a{
-    color:#B80319!important;
+    color: @primary!important;
 }
 #home-action{
-	background-color:#000!important;
-	color:#B80319!important;
+	background-color:@black!important;
+	color:@primary!important;
 }
 .intro-text, .page-scroll{
-	color:#fff!important;
-    text-shadow: 2px 2px #000;
+	color:@white!important;
+    text-shadow: 2px 2px @black;
 }
 
 .logo, .logo img{
@@ -398,10 +406,10 @@ body {
 	padding-left:55px;
 }
 .red, #people strong{
-	color:#B80319;
+	color: @primary;
 }
 #people .btn:hover, #people .btn:focus{
-	background-color:#fff;
+	background-color:@white;
 }
 #people .btn{
 	margin-top:50px;
@@ -411,12 +419,12 @@ body {
 	list-style: none;
 }
 #people .container .text{
-    background-color:rgba(0,0,0, 0.1);
+    background-color:fadeout(@black, 90%);
     padding:25px;
     border-radius: 15px;
 }
 .grey{
-	color:#e8e8e8;
+	color:@grey;
 }
 footer .grey, footer .red{
  font-size:0.7em;
@@ -428,6 +436,6 @@ footer .banner-social-buttons{
 	margin-bottom:90px;
 }
 .caption{
-	color:#B80319;
+	color:@primary;
 	font-size:1.2em;
 }
